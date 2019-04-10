@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/element-ui@2.7.2.css">
 </head>
 <body>
     <h4>首页</h4>
+    {% if env == 'develop' %}
+    <script src="./js/vue.js"></script>
+    {% else %}
+    <script src="./js/vue.min.js"></script>
+    {% endif %}
+    <script src="./js/element-ui@2.7.2.js"></script>
+    <script src="./js/zh-CN.js"></script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+[2019-04-10T22:47:10.561] [DEBUG] app - {"projectname":"koa-develop-template","env":"develop","host":"127.0.0.1:3000","method":"GET","url":"/","responsetime":"响应时间为: 0.04s","language":"zh-CN,zh;q=0.9"}

@@ -3,9 +3,13 @@ const app = new koa();
 const network = require("./config/network");
 const bodyParser = require('koa-bodyparser');
 const path = require("path");
+const middleware = require("./middleware");
 const static = require("koa-static");
 const koaNunjucks = require("koa-nunjucks-2");
 const router = require('./router');
+
+// TODO: 中间件使用
+middleware(app);
 
 // TODO: 静态资源中间件
 app.use(static(path.resolve(__dirname, 'static'), {
